@@ -1,0 +1,104 @@
+body {
+    background-color: var(--bg);
+    color: var(--blue)
+}
+
+.store-cont {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 63px;
+}
+
+#btn-close,
+#animated {
+  display: none;
+}
+
+
+#product-image button {
+    background-color: var(--bg);
+    border: none;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+}
+
+#product-image {
+    position: relative;
+  }
+
+html.animated button#btn-360,
+html.animated img#static {
+    display: none;
+}
+
+html.animated button#btn-close,
+html.animated img#animated {
+    display: initial;
+}
+
+#product-image > img {
+    width: 449px;
+    height: 222px;
+    object-fit: cover;
+}
+
+.sofa-info-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.product-info {
+    width: 281px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.code {
+    font-family: 'Lato', serif;
+    font-style: normal;
+    font-size: var(--text1);
+    font-weight: 300;
+}
+
+.product-info h1 {  
+    font-size: var(--heading);
+    font-family: 'Crimson Pro', sans-serifs;
+    font-style: normal;
+}
+
+.price {
+    font-size: var(--text2);
+    font-family: 'Lato', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.store-btn {
+    border: 0.5px solid var(--blue);
+    border-radius: 999px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: var(--text3);
+    background-color: var(--bg);
+}
+
+.store-btn:hover {
+    background-color: var(--blue);
+    color: var(--white)
+}
+
+@media (max-width: 670px) {
+    .store-cont {
+        flex-direction: column;
+    }
+}
