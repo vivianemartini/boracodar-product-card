@@ -1,4 +1,4 @@
-# boraCodar - Cahllenge 2
+# boraCodar - Challenge 2
 
 Rocketseat community started a coding challenge, every week they post a new idea that you can show your coding skills.
 
@@ -36,3 +36,8 @@ npm start
 ```
 
 
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledgments
+- Thanks Rocketseat
